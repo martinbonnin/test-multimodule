@@ -1,0 +1,14 @@
+type Query {
+    foo: Int
+    direction: Direction
+    unusedEnum: UnusedEnum
+}
+
+enum Direction {
+    North,
+    South
+}
+
+enum UnusedEnum {
+    Value
+}

@@ -6,3 +6,6 @@ pluginManagement {
     }
   }
 }
+
+include(":schema")
+include(":mappers")
