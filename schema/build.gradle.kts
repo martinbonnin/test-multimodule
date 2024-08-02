@@ -1,10 +1,10 @@
 plugins {
     id("org.jetbrains.kotlin.jvm")
-    id("com.apollographql.apollo3")
+    id("com.apollographql.apollo")
 }
 
 dependencies {
-    api("com.apollographql.apollo3:apollo-runtime")
+    api("com.apollographql.apollo:apollo-runtime")
 }
 
 apollo {
@@ -12,8 +12,6 @@ apollo {
         packageName.set("com.example")
         srcDir("graphql")
 
-        alwaysGenerateTypesMatching.set(emptyList())
         generateApolloMetadata.set(true)
-        isADependencyOf(project(":mappers"))
     }
 }
